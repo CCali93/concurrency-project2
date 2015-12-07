@@ -17,7 +17,7 @@ public class BodyScan extends UntypedActor {
             security = actors[1];
         } else if(message instanceof Passenger) {
             //TODO: scan here
-            queue.tell(new ScanReady());
+            queue.tell(new ScanReadyMessage());
         }
     }
 }

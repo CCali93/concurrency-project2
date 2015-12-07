@@ -17,4 +17,15 @@ public class Configure {
     public ActorRef[] getActors() {
         return Arrays.copyOf(this.connectedActors, this.connectedActors.length);
     }
+
+    public static final int NUM_PASSENGERS = 3;
+
+    public static final String[] PASSENGER_NAMES = {"Bob, Joe, Lisa"};
+
+    public static final int NUM_LINES = 2;
+
+    public static final int FAIL_PROBABILITY = 20;
+
+    public static final int SCANNERS_PER_LINE = 2;
+
 }

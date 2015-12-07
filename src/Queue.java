@@ -21,7 +21,7 @@ public class Queue extends UntypedActor {
         } else if(message instanceof Passenger) {
             bagScan.tell(message);
             waitingInLine.add((Passenger) message);
-        } else if (message instanceof ScanReady) {
+        } else if (message instanceof ScanReadyMessage) {
             Passenger passenger = waitingInLine.poll();
 
             if(passenger != null) {
