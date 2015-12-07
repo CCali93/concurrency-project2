@@ -18,6 +18,15 @@ public class Queue extends UntypedActor {
             waitingInLine = new LinkedList<>();
             bagScan = connections[0];
             bodyScan = connections[1];
+        } else if(message instanceof Passenger) {
+            bagScan.tell(message);
+            waitingInLine.add((Passenger) message);
+        } else if (message instanceof ScanReady) {
+            Passenger passenger = waitingInLine.poll();
+
+            if(passenger != null) {
+                bodyScan.tell(passenger);
+            }
         }
     }
 }

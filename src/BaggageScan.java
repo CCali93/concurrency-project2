@@ -12,6 +12,8 @@ public class BaggageScan extends UntypedActor {
         if(message instanceof Configure) {
             Configure config = (Configure) message;
             security = config.getActors()[0];
+        } else if(message instanceof Passenger) {
+            //TODO: "scan" the bag (passenger)
         }
     }
 }

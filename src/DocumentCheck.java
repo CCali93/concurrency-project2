@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * Created by curtis on 12/4/15.
  */
 public class DocumentCheck extends UntypedActor {
+    int currentLine;
     private ArrayList<ActorRef> checkLines;
 
     @Override
@@ -18,6 +19,12 @@ public class DocumentCheck extends UntypedActor {
             for(ActorRef queue : config.getActors()) {
                 checkLines.add(queue);
             }
+
+            currentLine = 0;
+        } else if(message instanceof Passenger) {
+            checkLines.get(currentLine).tell(message);
+
+            currentLine = (currentLine + 1) % checkLines.size();
         }
     }
 }
