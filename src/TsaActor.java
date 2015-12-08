@@ -3,4 +3,6 @@
  */
 public interface TsaActor {
     void close();
+    void setLineNumber(int lineNumber);
+    int getLineNumber();
 }

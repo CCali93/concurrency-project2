@@ -7,7 +7,6 @@ import java.util.Map;
  * Created by curtis on 12/7/15.
  */
 public class SecurityImpl extends AbstractTsaActor implements Security{
-    private int lineNumber;
     private Jail jail;
 
     private final Map<Passenger, ScanResult> scanResults = new HashMap<>();
@@ -63,11 +62,6 @@ public class SecurityImpl extends AbstractTsaActor implements Security{
     @Override
     public void setJail(Jail jail) {
         this.jail = jail;
-    }
-
-    @Override
-    public void setLineNumber(int lineNumber) {
-        this.lineNumber = lineNumber;
     }
 
     /**
