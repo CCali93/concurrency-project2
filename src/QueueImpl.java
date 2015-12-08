@@ -6,7 +6,7 @@ import java.util.LinkedList;
 /**
  * Created by curtis on 12/7/15.
  */
-public class QueueImpl extends TypedActor implements Queue {
+public class QueueImpl extends AbstractTsaActor implements Queue {
     private BaggageScan bagScan;
     private BodyScan bodyScan;
     private LinkedList<Passenger> waitingInLine = new LinkedList<>();
@@ -39,5 +39,13 @@ public class QueueImpl extends TypedActor implements Queue {
     @Override
     public void setBodyScan(BodyScan bodyScan) {
         this.bodyScan = bodyScan;
+    }
+
+    @Override
+    public void close() {
+        bagScan.close();
+        bodyScan.close();
+
+        super.close();
     }
 }

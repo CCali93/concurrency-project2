@@ -6,7 +6,7 @@ import java.util.LinkedList;
 /**
  * Created by curtis on 12/4/15.
  */
-public interface Queue {
+public interface Queue extends TsaActor {
     void addPassenger(Passenger passenger);
     void sendPassengerTodyBoScanner();
     void setBagScan(BaggageScan bagScan);

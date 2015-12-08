@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Created by curtis on 12/7/15.
  */
-public class SecurityImpl extends TypedActor  implements Security{
+public class SecurityImpl extends AbstractTsaActor implements Security{
     private int lineNumber;
     private Jail jail;
 
@@ -23,7 +23,7 @@ public class SecurityImpl extends TypedActor  implements Security{
         if (closesReceived >= Configuration.SCANNERS_PER_LINE) {
             jail.close(); // Tell jail this station has closed
             printMsg("Close sent to jail");
-            TypedActor.stop(this); // Close this station down
+            super.close();
             printMsg("Closed");
         }
 
@@ -36,7 +36,7 @@ public class SecurityImpl extends TypedActor  implements Security{
         printMsg("Passenger " + result.getPassenger().getName() +
                 " result received (" + (currentResult ? "pass" : "fail") + ")");
 
-        // Add passenger and result to map if passenger is not yet in map
+        // Add passenger and result to mapTypedActor  if passenger is not yet in map
         if (!scanResults.containsKey(result.getPassenger())) {
             scanResults.put(result.getPassenger(), result);
         } else { // Else, entry for passenger exists in map

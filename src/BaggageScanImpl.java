@@ -3,7 +3,7 @@ import akka.actor.TypedActor;
 /**
  * Created by curtis on 12/7/15.
  */
-public class BaggageScanImpl extends TypedActor implements BaggageScan {
+public class BaggageScanImpl extends AbstractTsaActor implements BaggageScan {
     private Security security;
 
     @Override
@@ -13,5 +13,11 @@ public class BaggageScanImpl extends TypedActor implements BaggageScan {
 
     public void setSecurity(Security security) {
         this.security = security;
+    }
+
+    @Override
+    public void close() {
+        security.close();
+        super.close();
     }
 }
