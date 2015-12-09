@@ -1,5 +1,5 @@
 /**
- * Created by curtis on 12/4/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public interface Queue extends TsaActor {
     void addPassenger(Passenger passenger);

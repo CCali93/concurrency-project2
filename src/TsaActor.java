@@ -1,8 +1,10 @@
 /**
- * Created by curtis on 12/7/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public interface TsaActor {
     void close();
-    void setLineNumber(int lineNumber);
+
     int getLineNumber();
+
+    void setLineNumber(int lineNumber);
 }

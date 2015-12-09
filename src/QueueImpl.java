@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 /**
- * Created by curtis on 12/7/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public class QueueImpl extends AbstractTsaActor implements Queue {
     private BaggageScan bagScan;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by curtis on 12/7/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public class JailImpl extends TypedActor implements Jail {
     private final List<Passenger> prisoners = new ArrayList<>();

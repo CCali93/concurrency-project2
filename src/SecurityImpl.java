@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by curtis on 12/7/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public class SecurityImpl extends AbstractTsaActor implements Security{
     private final Map<Passenger, ScanResult> scanResults = new HashMap<>();

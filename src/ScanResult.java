@@ -1,5 +1,5 @@
 /**
- * Created by austin on 12/7/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public class ScanResult {
     private final Passenger passenger;

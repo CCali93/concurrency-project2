@@ -1,7 +1,6 @@
 /**
- * Created by curtis on 12/4/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
-
 public interface BodyScan extends TsaActor {
     void setSecurity(Security security);
     void setQueue(Queue queue);

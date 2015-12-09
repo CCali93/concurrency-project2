@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 /**
- * Created by curtis on 12/7/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public class DocumentCheckImpl extends AbstractTsaActor implements DocumentCheck {
     private int currentLine = 0;

@@ -1,5 +1,5 @@
 /**
- * Created by curtis on 12/7/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public class BaggageScanImpl extends AbstractTsaActor implements BaggageScan {
     private Security security;

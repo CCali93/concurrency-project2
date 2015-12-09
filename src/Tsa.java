@@ -1,7 +1,7 @@
 import akka.actor.TypedActor;
 
 /**
- * Created by curtis on 12/4/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public class Tsa {
     public static void main(String[] args) {

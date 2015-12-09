@@ -1,5 +1,5 @@
 /**
- * Created by curtis on 12/4/15.
+ * @author Austin Cowan, Curtis Cali, Kurt Poquette
  */
 public interface BaggageScan extends TsaActor {
     void receivePassenger(Passenger passenger);
