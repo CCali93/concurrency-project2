@@ -3,4 +3,6 @@
  */
 public interface Jail extends TsaActor {
     void receivePassenger(Passenger passenger);
+
+    void close();
 }

@@ -9,7 +9,8 @@ public class QueueImpl extends AbstractTsaActor implements Queue {
     private LinkedList<Passenger> waitingInLine = new LinkedList<>();
     private boolean bodyScannerReady = true;
     private boolean closeReceived = false;
-    private QueueImpl() {
+
+    public QueueImpl() {
         super();
     }
 
@@ -20,8 +21,8 @@ public class QueueImpl extends AbstractTsaActor implements Queue {
         printMsg("Passenger " + passenger.getName() + " places baggage on scanner");
         bagScan.receivePassenger(passenger);
         if (bodyScannerReady) { // Go to body scan if it is ready
-            bodyScanReady(false);
             sendPassengerToBodyScanner();
+            bodyScanReady(false);
         }
     }
 
@@ -38,7 +39,13 @@ public class QueueImpl extends AbstractTsaActor implements Queue {
         }
 
         if (closeReceived) {
-            close();
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            } finally {
+                close();
+            }
         }
     }
 

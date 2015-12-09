@@ -4,7 +4,7 @@
 public class Configuration {
     public static final int NUM_PASSENGERS = 3;
 
-    public static final String[] PASSENGER_NAMES = {"Bob, Joe, Lisa"};
+    public static final String[] PASSENGER_NAMES = {"Bob", "Joe", "Lisa"};
 
     public static final int NUM_LINES = 2;
 

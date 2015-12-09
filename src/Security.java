@@ -5,4 +5,6 @@ public interface Security extends TsaActor {
     void receiveScanResult(ScanResult result);
     void setJail(Jail jail);
     void setLineNumber(int lineNumber);
+
+    void close();
 }
