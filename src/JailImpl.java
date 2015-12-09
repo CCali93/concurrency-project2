@@ -21,10 +21,11 @@ public class JailImpl extends TypedActor implements Jail {
             // All security stations have shut down, shut down Jail.
             for (Passenger p : prisoners) {
                 printMsg("Passenger " + p.getName()
-                        + " is moved to permanent detention.");
+                        + " is moved to permanent detention");
             }
             TypedActor.stop(this);
             printMsg("Closed");
+            System.exit(0);
         }
     }
 
@@ -51,6 +52,6 @@ public class JailImpl extends TypedActor implements Jail {
      * @param message - the message to print
      */
     private void printMsg(String message) {
-        System.out.println("Jail: " + message);
+        System.out.println("        Jail: " + message);
     }
 }

@@ -44,6 +44,6 @@ public class BodyScanImpl extends AbstractTsaActor implements BodyScan {
 
 
     private void printMsg(String msg) {
-        System.out.println("Body Scan " + getLineNumber() + ": " + msg);
+        System.out.println("    Body Scan " + getLineNumber() + ": " + msg);
     }
 }

@@ -78,7 +78,7 @@ public class QueueImpl extends AbstractTsaActor implements Queue {
     }
 
     private void printMsg(String msg) {
-        System.out.println("Queue " + getLineNumber() + ": " + msg);
+        System.out.println("  Queue " + getLineNumber() + ": " + msg);
     }
 
     public void bodyScanReady(boolean ready) {

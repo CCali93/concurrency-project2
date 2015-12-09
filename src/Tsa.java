@@ -40,5 +40,7 @@ public class Tsa {
         }
         // Close document check after all passengers have entered
         documentCheck.close();
+
     }
+
 }

@@ -15,7 +15,7 @@ public class SecurityImpl extends AbstractTsaActor implements Security{
         // both scanners. If so, send CloseMessage to Jail and shut down Security.
         closesReceived++;
         printMsg("Received " + closesReceived + " of " + Configuration.SCANNERS_PER_LINE
-                + " close messages needed" );
+                + " close messages needed from line " + getLineNumber());
         if (closesReceived >= Configuration.SCANNERS_PER_LINE) {
             jail.close(); // Tell jail this station has closed
             printMsg("Close sent to jail");
@@ -67,6 +67,6 @@ public class SecurityImpl extends AbstractTsaActor implements Security{
      * @param message - the message to print
      */
     private void printMsg(String message) {
-        System.out.println("Security: " + message);
+        System.out.println("      Security " + getLineNumber() + ": " + message);
     }
 }

@@ -34,6 +34,6 @@ public class BaggageScanImpl extends AbstractTsaActor implements BaggageScan {
     }
 
     private void printMsg(String message) {
-        System.out.println("Baggage Scan " + getLineNumber() + ": " + message);
+        System.out.println("    Baggage Scan " + getLineNumber() + ": " + message);
     }
 }
