@@ -16,15 +16,15 @@ public class JailImpl extends TypedActor implements Jail {
         // count of close messages received and check to see if all have closed.
         closesReceived++;
         printMsg("Received " + closesReceived + " of " + Configuration.NUM_LINES
-                + " close messages needed" );
+                + " close messages needed");
         if (closesReceived >= Configuration.NUM_LINES ) {
             // All security stations have shut down, shut down Jail.
             for (Passenger p : prisoners) {
                 printMsg("Passenger " + p.getName()
                         + " is moved to permanent detention");
             }
-            TypedActor.stop(this);
             printMsg("Closed");
+            TypedActor.stop(this);
             System.exit(0);
         }
     }

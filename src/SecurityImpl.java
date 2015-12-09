@@ -17,10 +17,10 @@ public class SecurityImpl extends AbstractTsaActor implements Security{
         printMsg("Received " + closesReceived + " of " + Configuration.SCANNERS_PER_LINE
                 + " close messages needed from line " + getLineNumber());
         if (closesReceived >= Configuration.SCANNERS_PER_LINE) {
-            jail.close(); // Tell jail this station has closed
             printMsg("Close sent to jail");
-            super.close();
+            jail.close(); // Tell jail this station has closed
             printMsg("Closed");
+            super.close();
         }
 
     }

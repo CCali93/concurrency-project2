@@ -1,0 +1,255 @@
+Document Check: Passenger Bob arrives
+Document Check: Passenger Bob passes document check and is sent to line 0
+Document Check: Passenger Joe arrives
+Document Check: Passenger Joe passes document check and is sent to line 1
+  Queue 0: Passenger Bob enters the queue
+  Queue 0: Passenger Bob places baggage on scanner
+Document Check: Passenger Lisa arrives
+  Queue 1: Passenger Joe enters the queue
+Document Check: Passenger Lisa passes document check and is sent to line 2
+  Queue 1: Passenger Joe places baggage on scanner
+Document Check: Passenger Blaine arrives
+Document Check: Passenger Blaine fails document check and is turned away
+Document Check: Passenger Wolf arrives
+  Queue 2: Passenger Lisa enters the queue
+Document Check: Passenger Wolf fails document check and is turned away
+  Queue 2: Passenger Lisa places baggage on scanner
+Document Check: Passenger Reece arrives
+Document Check: Passenger Reece passes document check and is sent to line 3
+Document Check: Passenger Paul arrives
+  Queue 3: Passenger Reece enters the queue
+  Queue 3: Passenger Reece places baggage on scanner
+  Queue 0: Passenger Bob is signaled to enter the body scanner
+  Queue 1: Passenger Joe is signaled to enter the body scanner
+    Baggage Scan 2: Passenger Lisa's baggage enters
+    Baggage Scan 2: Passenger Lisa's baggage passes
+    Baggage Scan 0: Passenger Bob's baggage enters
+    Baggage Scan 0: Passenger Bob's baggage passes
+Document Check: Passenger Paul passes document check and is sent to line 4
+    Baggage Scan 3: Passenger Reece's baggage enters
+    Baggage Scan 3: Passenger Reece's baggage passes
+    Baggage Scan 1: Passenger Joe's baggage enters
+    Baggage Scan 1: Passenger Joe's baggage passes
+  Queue 3: Passenger Reece is signaled to enter the body scanner
+    Body Scan 0: Passenger Bob enters body scanner
+    Body Scan 0: Passenger Bob passes body scan
+      Security 1: Passenger Joe result received (pass)
+  Queue 2: Passenger Lisa is signaled to enter the body scanner
+      Security 3: Passenger Reece result received (pass)
+      Security 0: Passenger Bob result received (pass)
+    Body Scan 1: Passenger Joe enters body scanner
+    Body Scan 3: Passenger Reece enters body scanner
+  Queue 4: Passenger Paul enters the queue
+Document Check: Passenger Brent arrives
+  Queue 4: Passenger Paul places baggage on scanner
+    Body Scan 2: Passenger Lisa enters body scanner
+    Body Scan 3: Passenger Reece passes body scan
+    Body Scan 1: Passenger Joe passes body scan
+      Security 0: Passenger Bob result received (pass)
+      Security 3: Passenger Reece result received (pass)
+      Security 3: Passenger Reece continues to airport
+      Security 1: Passenger Joe result received (pass)
+      Security 1: Passenger Joe continues to airport
+      Security 2: Passenger Lisa result received (pass)
+      Security 0: Passenger Bob continues to airport
+    Baggage Scan 4: Passenger Paul's baggage enters
+    Body Scan 2: Passenger Lisa passes body scan
+  Queue 4: Passenger Paul is signaled to enter the body scanner
+      Security 2: Passenger Lisa result received (pass)
+Document Check: Passenger Brent fails document check and is turned away
+      Security 2: Passenger Lisa continues to airport
+    Body Scan 4: Passenger Paul enters body scanner
+    Baggage Scan 4: Passenger Paul's baggage passes
+    Body Scan 4: Passenger Paul passes body scan
+      Security 4: Passenger Paul result received (pass)
+Document Check: Passenger Todd arrives
+Document Check: Passenger Todd passes document check and is sent to line 0
+      Security 4: Passenger Paul result received (pass)
+      Security 4: Passenger Paul continues to airport
+Document Check: Passenger Brock arrives
+  Queue 0: Passenger Todd enters the queue
+Document Check: Passenger Brock passes document check and is sent to line 1
+  Queue 0: Passenger Todd places baggage on scanner
+  Queue 1: Passenger Brock enters the queue
+Document Check: Passenger Kyle arrives
+  Queue 0: Passenger Todd is signaled to enter the body scanner
+Document Check: Passenger Kyle fails document check and is turned away
+    Baggage Scan 0: Passenger Todd's baggage enters
+    Body Scan 0: Passenger Todd enters body scanner
+  Queue 1: Passenger Brock places baggage on scanner
+    Body Scan 0: Passenger Todd fails body scan
+    Baggage Scan 0: Passenger Todd's baggage passes
+    Baggage Scan 1: Passenger Brock's baggage enters
+    Baggage Scan 1: Passenger Brock's baggage passes
+Document Check: Passenger Cane arrives
+      Security 0: Passenger Todd result received (fail)
+  Queue 1: Passenger Brock is signaled to enter the body scanner
+      Security 0: Passenger Todd result received (pass)
+      Security 1: Passenger Brock result received (pass)
+    Body Scan 1: Passenger Brock enters body scanner
+Document Check: Passenger Cane fails document check and is turned away
+    Body Scan 1: Passenger Brock fails body scan
+      Security 0: Passenger Todd failed one scan and is sent to jail
+Document Check: Passenger Chance arrives
+Document Check: Passenger Chance passes document check and is sent to line 2
+      Security 1: Passenger Brock result received (fail)
+      Security 1: Passenger Brock failed one scan and is sent to jail
+Document Check: Passenger Charles arrives
+  Queue 2: Passenger Chance enters the queue
+Document Check: Passenger Charles passes document check and is sent to line 3
+  Queue 2: Passenger Chance places baggage on scanner
+Document Check: Passenger Todd arrives
+  Queue 2: Passenger Chance is signaled to enter the body scanner
+  Queue 3: Passenger Charles enters the queue
+Document Check: Passenger Todd fails document check and is turned away
+    Baggage Scan 2: Passenger Chance's baggage enters
+    Body Scan 2: Passenger Chance enters body scanner
+  Queue 3: Passenger Charles places baggage on scanner
+    Body Scan 2: Passenger Chance passes body scan
+    Baggage Scan 2: Passenger Chance's baggage passes
+  Queue 3: Passenger Charles is signaled to enter the body scanner
+    Baggage Scan 3: Passenger Charles's baggage enters
+    Baggage Scan 3: Passenger Charles's baggage passes
+Document Check: Passenger Scott arrives
+Document Check: Passenger Scott fails document check and is turned away
+    Body Scan 3: Passenger Charles enters body scanner
+      Security 2: Passenger Chance result received (pass)
+    Body Scan 3: Passenger Charles passes body scan
+Document Check: Passenger Craig arrives
+        Jail: Passenger Todd is jailed
+      Security 3: Passenger Charles result received (pass)
+        Jail: Passenger Brock is jailed
+      Security 3: Passenger Charles result received (pass)
+Document Check: Passenger Craig passes document check and is sent to line 4
+      Security 2: Passenger Chance result received (pass)
+      Security 3: Passenger Charles continues to airport
+  Queue 4: Passenger Craig enters the queue
+Document Check: Passenger Seth arrives
+      Security 2: Passenger Chance continues to airport
+Document Check: Passenger Seth passes document check and is sent to line 0
+  Queue 4: Passenger Craig places baggage on scanner
+Document Check: Passenger Drake arrives
+  Queue 0: Passenger Seth enters the queue
+  Queue 4: Passenger Craig is signaled to enter the body scanner
+  Queue 0: Passenger Seth places baggage on scanner
+Document Check: Passenger Drake fails document check and is turned away
+    Body Scan 4: Passenger Craig enters body scanner
+    Baggage Scan 4: Passenger Craig's baggage enters
+    Body Scan 4: Passenger Craig passes body scan
+    Baggage Scan 0: Passenger Seth's baggage enters
+Document Check: Passenger Dwayne arrives
+      Security 4: Passenger Craig result received (pass)
+  Queue 0: Passenger Seth is signaled to enter the body scanner
+Document Check: Passenger Dwayne passes document check and is sent to line 1
+    Baggage Scan 0: Passenger Seth's baggage passes
+    Body Scan 0: Passenger Seth enters body scanner
+  Queue 1: Passenger Dwayne enters the queue
+    Baggage Scan 4: Passenger Craig's baggage passes
+      Security 0: Passenger Seth result received (pass)
+  Queue 1: Passenger Dwayne places baggage on scanner
+    Body Scan 0: Passenger Seth passes body scan
+      Security 4: Passenger Craig result received (pass)
+    Baggage Scan 1: Passenger Dwayne's baggage enters
+  Queue 1: Passenger Dwayne is signaled to enter the body scanner
+    Baggage Scan 1: Passenger Dwayne's baggage passes
+      Security 0: Passenger Seth result received (pass)
+    Body Scan 1: Passenger Dwayne enters body scanner
+      Security 4: Passenger Craig continues to airport
+    Body Scan 1: Passenger Dwayne passes body scan
+      Security 1: Passenger Dwayne result received (pass)
+      Security 0: Passenger Seth continues to airport
+      Security 1: Passenger Dwayne result received (pass)
+      Security 1: Passenger Dwayne continues to airport
+Document Check: All passengers processed. Closing down for the day
+Document Check: Close sent to Queue 0
+  Queue 0: Close received
+  Queue 0: Close sent to baggage scanner
+Document Check: Close sent to Queue 1
+  Queue 1: Close received
+  Queue 1: Close sent to baggage scanner
+  Queue 1: Close sent to body scanner
+    Baggage Scan 1: Close received
+  Queue 0: Close sent to body scanner
+    Baggage Scan 0: Close received
+Document Check: Close sent to Queue 2
+  Queue 2: Close received
+  Queue 2: Close sent to baggage scanner
+  Queue 2: Close sent to body scanner
+    Baggage Scan 2: Close received
+  Queue 1: Closed
+  Queue 0: Closed
+    Body Scan 1: Close received
+      Security 1: Received 1 of 2 close messages needed from line 1
+    Baggage Scan 1: Close sent to security
+    Body Scan 0: Close received
+      Security 2: Received 1 of 2 close messages needed from line 2
+      Security 0: Received 1 of 2 close messages needed from line 0
+  Queue 2: Closed
+      Security 0: Received 2 of 2 close messages needed from line 0
+    Body Scan 0: Close sent to security
+    Body Scan 0: Closed
+    Baggage Scan 1: Closed
+      Security 1: Received 2 of 2 close messages needed from line 1
+    Body Scan 1: Close sent to security
+    Baggage Scan 0: Close sent to security
+    Body Scan 2: Close received
+    Baggage Scan 2: Close sent to security
+    Baggage Scan 2: Closed
+    Baggage Scan 0: Closed
+    Body Scan 1: Closed
+Document Check: Close sent to Queue 3
+      Security 2: Received 2 of 2 close messages needed from line 2
+      Security 1: Close sent to jail
+    Body Scan 2: Close sent to security
+    Body Scan 2: Closed
+      Security 1: Closed
+      Security 0: Close sent to jail
+      Security 2: Close sent to jail
+      Security 0: Closed
+        Jail: Received 1 of 5 close messages needed
+  Queue 3: Close received
+  Queue 3: Close sent to baggage scanner
+      Security 2: Closed
+  Queue 3: Close sent to body scanner
+        Jail: Received 2 of 5 close messages needed
+  Queue 3: Closed
+    Baggage Scan 3: Close received
+Document Check: Close sent to Queue 4
+    Baggage Scan 3: Close sent to security
+        Jail: Received 3 of 5 close messages needed
+    Body Scan 3: Close received
+  Queue 4: Close received
+      Security 3: Received 1 of 2 close messages needed from line 3
+    Baggage Scan 3: Closed
+      Security 3: Received 2 of 2 close messages needed from line 3
+  Queue 4: Close sent to baggage scanner
+      Security 3: Close sent to jail
+      Security 3: Closed
+    Body Scan 3: Close sent to security
+Document Check: Closed
+    Body Scan 3: Closed
+    Baggage Scan 4: Close received
+        Jail: Received 4 of 5 close messages needed
+    Baggage Scan 4: Close sent to security
+      Security 4: Received 1 of 2 close messages needed from line 4
+  Queue 4: Close sent to body scanner
+    Baggage Scan 4: Closed
+  Queue 4: Closed
+    Body Scan 4: Close received
+    Body Scan 4: Close sent to security
+    Body Scan 4: Closed
+      Security 4: Received 2 of 2 close messages needed from line 4
+      Security 4: Close sent to jail
+        Jail: Received 5 of 5 close messages needed
+      Security 4: Closed
+        Jail: Passenger Todd is moved to permanent detention
+        Jail: Passenger Brock is moved to permanent detention
+        Jail: Closed
+
+Process finished with exit code 0
+
+
+"An annotated trace file of the output with sufficient output and annotation
+to demonstrate and explain that the system operates per the requirements"
+
+Explanation:

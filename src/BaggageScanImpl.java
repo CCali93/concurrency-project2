@@ -26,11 +26,10 @@ public class BaggageScanImpl extends AbstractTsaActor implements BaggageScan {
 
     @Override
     public void close() {
-        printMsg("Close received");
-        security.close();
         printMsg("Close sent to security");
-        super.close();
+        security.close();
         printMsg("Closed");
+        super.close();
     }
 
     private void printMsg(String message) {

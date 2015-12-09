@@ -8,10 +8,10 @@ public class BodyScanImpl extends AbstractTsaActor implements BodyScan {
     @Override
     public void close() {
         printMsg("Close received");
-        security.close();
         printMsg("Close sent to security");
-        super.close();
+        security.close();
         printMsg("Closed");
+        super.close();
     }
 
     @Override
