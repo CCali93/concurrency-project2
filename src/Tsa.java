@@ -7,7 +7,7 @@ public class Tsa {
     public static void main(String[] args) {
         Jail jail = TypedActor.newInstance(Jail.class, JailImpl.class);
         DocumentCheck documentCheck =
-            TypedActor.newInstance(DocumentCheck.class, DocumentCheck.class);
+                TypedActor.newInstance(DocumentCheck.class, DocumentCheckImpl.class);
 
         //Configure all the connections for each line
         for(int i = 0; i < Configuration.NUM_LINES; i++) {
@@ -19,7 +19,7 @@ public class Tsa {
             bagScan.setLineNumber(i);
             bagScan.setSecurity(security);
 
-            BodyScan bodyScan = TypedActor.newInstance(BodyScan.class, BodyScanImpl.class);;
+            BodyScan bodyScan = TypedActor.newInstance(BodyScan.class, BodyScanImpl.class);
             bodyScan.setLineNumber(i);
             bodyScan.setSecurity(security);
 
@@ -38,5 +38,7 @@ public class Tsa {
                 new Passenger(Configuration.PASSENGER_NAMES[i])
             );
         }
+        // Close document check after all passengers have entered
+        documentCheck.close();
     }
 }

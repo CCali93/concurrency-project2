@@ -1,5 +1,3 @@
-import akka.actor.TypedActor;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,9 +5,8 @@ import java.util.Map;
  * Created by curtis on 12/7/15.
  */
 public class SecurityImpl extends AbstractTsaActor implements Security{
-    private Jail jail;
-
     private final Map<Passenger, ScanResult> scanResults = new HashMap<>();
+    private Jail jail;
     private int closesReceived = 0;
 
     @Override
@@ -65,11 +62,11 @@ public class SecurityImpl extends AbstractTsaActor implements Security{
     }
 
     /**
-     * Prints message from jail
+     * Prints message from Security
      *
      * @param message - the message to print
      */
     private void printMsg(String message) {
-        System.out.println("Jail: " + message);
+        System.out.println("Security: " + message);
     }
 }

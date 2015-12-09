@@ -7,8 +7,8 @@ import java.util.List;
  * Created by curtis on 12/7/15.
  */
 public class JailImpl extends TypedActor implements Jail {
-    private int closesReceived = 0;
     private final List<Passenger> prisoners = new ArrayList<>();
+    private int closesReceived = 0;
 
     @Override
     public void close() {
@@ -26,6 +26,16 @@ public class JailImpl extends TypedActor implements Jail {
             TypedActor.stop(this);
             printMsg("Closed");
         }
+    }
+
+    @Override
+    public int getLineNumber() {
+        return 0;
+    }
+
+    @Override
+    public void setLineNumber(int lineNumber) {
+
     }
 
     @Override
