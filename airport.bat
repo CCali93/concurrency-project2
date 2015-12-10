@@ -2,4 +2,4 @@
 set CLASSPATH=.
 set CLASSPATH=%CLASSPATH%;/Users/austin/Desktop/concurrency-project2.jar
 
-%JAVA_HOME%\bin\java -Xms128m -Xmx384m -Xnoclassgc ro.my.class.MyClass
+%JAVA_HOME%\bin\java -jar -Xms128m -Xmx384m -Xnoclassgc concurrency-project2.jar

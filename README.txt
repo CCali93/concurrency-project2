@@ -1,6 +1,7 @@
 To Compile:
-    * simply change directory into PROJECT_ROOT/src
-    * run the command javac *.java
+    * simply change directory into PROJECT_ROOT
+    * run the command java cf concurrency-project2.jar src/*.java
 
 To Run:
-    * simply run java Tsa, and the program will run
+    * Run the airport.sh file if you're on a *nix system
+    * If you're running windows, run the airport.bat file
